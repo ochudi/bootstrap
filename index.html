@@ -1,61 +1,46 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Book</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- headings tags -->
-    <h1>Tutorial</h1>
-    <h2>This is h2</h2>
-    <h3>This is h3</h3>
-    <h2 class="h3">This is an h2 tag with the h3 class</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Net Ninja Pro - the Book</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+  <!-- basic buttons -->
+  <h2>Buttons</h2>
 
-    <!-- display headings -->
-    <h1 class="display-1">display 1 heading</h1>
-    <h1 class="display-4">display 4 heading</h1>
-    <h1 class="display-6">display 6 heading</h1>
-    <p class="display-1">p tag with display-1 class</p>
+  <button>default button</button>
+  <button class="btn btn-primary">primary button</button> <!-- auto lightens text -->
+  <button class="btn btn-secondary">secondary button</button>
 
-    <!-- lead text & alignments -->
-    <small>This is small text.</small>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p class="lead text-center">Hello Chudi.</p>
-    <p class="lead text-end">Hello Chudi.</p>
-    <p class="lead">Hello Chudi.</p>
+  <!-- anchor tags as buttons -->
+  <h2>Links as buttons</h2>
 
-    <!-- text decoration & font weight -->
-    <p class="text-decoration-underline">This is underlined text</p>
-    <p class="text-decoration-line-through">This is line-through text</p>
-    <p class="fw-bold">This is a bold text</p>
-    <small>This is small text.</small>
+  <a href="#" class="btn btn-info">info anchor tag</a>
+  <a href="#" class="btn btn-success">success anchor tag</a>
 
-    <!-- text colours -->
-    <p class="text-primary">theme primary colour</p>
-    <p class="text-secondary">theme secondary colour</p>
-    <p class="text-success">theme success colour</p>
-    <p class="text-danger">theme danger colour</p>
-    <p class="text-warning">theme warning colour</p>
-    <p class="text-info">theme info colour</p>
-    <p class="text-muted">theme muted colour</p>
+  <!-- button sizes -->
+  <h2>Button sizes</h2>
 
-    <!-- bg colours -->
-    <p class="text-white bg-primary">White text on primary bg</p>
-    <p class="text-white bg-secondary">White text on secondary bg</p>
-    <p class="text-white bg-danger">White text on danger bg</p>
+  <button class="btn btn-lg btn-danger">large danger button</button>
+  <button class="btn btn-sm btn-warning">small warning button</button>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- outlined styles -->
+  <h2>Button Styles</h2>
+
+  <button class="btn btn-outline-primary">outlined button</button>
+  <button class="btn btn-outline-secondary btn-lg">large outlined button</button>
+
+  <!-- button groups -->
+  <h2>Button Groups</h2>
+
+  <div class="btn-group">
+    <a href="#" class="btn btn-primary">button 1</a>
+    <a href="#" class="btn btn-warning">button 2</a>
+    <a href="#" class="btn btn-success">button 3</a>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
 </html>
