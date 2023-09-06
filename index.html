@@ -84,11 +84,14 @@
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-            <img
-              class="img-fluid"
-              src="assets/ebook-cover.png"
-              alt="Ebook Cover"
-            />
+            <!-- Tooltip -->
+            <span class="tt" data-bs-placement="bottom" title="Book Cover">
+              <img
+                class="img-fluid"
+                src="assets/ebook-cover.png"
+                alt="Ebook Cover"
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -484,8 +487,14 @@
                   type="text"
                   id="email"
                   class="form-control"
-                  placeholder="e.g. mario@example.com"
+                  placeholder="e.g. chudi@example.com"
                 />
+                <!-- Tooltip -->
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
               <label for="name" class="form-label">Name:</label>
               <div class="mb-4 input-group">
@@ -496,8 +505,14 @@
                   type="text"
                   id="name"
                   class="form-control"
-                  placeholder="e.g. Mario"
+                  placeholder="e.g. Chudi"
                 />
+                <!-- Tooltip -->
+                <span class="input-group-text">
+                    <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory, really...">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
               </div>
               <label for="subject" class="form-label"
                 >What is your question about?</label
@@ -537,5 +552,11 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>
