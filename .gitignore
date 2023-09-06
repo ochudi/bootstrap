@@ -1,0 +1,23 @@
+# Ignore node_modules directory
+/node_modules
+
+# Ignore build and dist directories
+/build
+/dist
+
+# Ignore any compiled CSS or JS files
+*.css
+*.js
+
+# Ignore log files and other editor-related files
+*.log
+*.swp
+.vscode/
+.idea/
+
+# Ignore compiled binaries if any
+*.exe
+
+# Ignore package-lock.json for npm and yarn.lock for yarn
+package-lock.json
+yarn.lock
