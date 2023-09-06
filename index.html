@@ -638,14 +638,45 @@
     </div>
 
     <!-- Side panel / Offcanvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+          repellat aliquid eaque, vel dolore magnam ea totam error, voluptate
+          officiis quo neque illum earum. Obcaecati distinctio necessitatibus
+          nobis incidunt iure.
+        </p>
+        <!-- Dropdown -->
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="book-dropdown"
+            data-bs-toggle="dropdown"
+          >
+            Choose a book title
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li><a href="#" class="dropdown-item">Become a React Dev</a></li>
+            <li><a href="#" class="dropdown-item">Conquering NextJs 13</a></li>
+            <li><a href="#" class="dropdown-item">Levelling up your Node Js</a></li>
+          </ul>
         </div>
-        <div class="offcanvas-body">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum repellat aliquid eaque, vel dolore magnam ea totam error, voluptate officiis quo neque illum earum. Obcaecati distinctio necessitatibus nobis incidunt iure.</p>
-        </div>
+      </div>
     </div>
 
     <script
